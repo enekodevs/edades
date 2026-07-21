@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="description" content="Estrategia por épocas. De la Prehistoria a la era Moderna, en la palma de la mano." />
+
+<!-- App instalada. `apple-mobile-web-app-capable` es lo que quita la barra de Safari al
+     abrir desde la pantalla de inicio; sin él esto es una pestaña, no una app.
+     `black-translucent` deja el juego correr bajo la barra de estado — por eso el HUD
+     TIENE que respetar los safe areas (ver style.css). -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Edades" />
+<meta name="theme-color" content="#14181b" />
+
+<title>Edades</title>
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icono-180.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+
+<!-- Pantallas de arranque de iOS. Generadas por `npm run iconos`: NO editar a mano.
+     iOS solo usa una si la media query encaja EXACTA con el aparato; si ninguna encaja,
+     enseña una pantalla en blanco mientras carga. De ahí la lista larga. -->
+<link rel="apple-touch-startup-image" media="(device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="./splash/iphone-se-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="./splash/iphone-se-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="./splash/iphone-8-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="./splash/iphone-8-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-8-plus-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-8-plus-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-x-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-x-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)" href="./splash/iphone-xr-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:landscape)" href="./splash/iphone-xr-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-xs-max-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-xs-max-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:390px) and (device-height:844px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-12-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:390px) and (device-height:844px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-12-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:428px) and (device-height:926px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-12-max-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:428px) and (device-height:926px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-12-max-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:393px) and (device-height:852px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-14-pro-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:393px) and (device-height:852px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-14-pro-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-14-promax-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-14-promax-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:402px) and (device-height:874px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-16-pro-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:402px) and (device-height:874px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-16-pro-apaisado.png">
+<link rel="apple-touch-startup-image" media="(device-width:440px) and (device-height:956px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)" href="./splash/iphone-16-promax-vertical.png">
+<link rel="apple-touch-startup-image" media="(device-width:440px) and (device-height:956px) and (-webkit-device-pixel-ratio:3) and (orientation:landscape)" href="./splash/iphone-16-promax-apaisado.png">
+
+  <script type="module" crossorigin src="./assets/index-CVJ5dNgX.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BvlNw2wg.css">
+</head>
+<body>
+  <div id="game"></div>
+  <div id="hud" style="display:none"></div>
+  <div id="menu"></div>
+  <!-- El juego es apaisado y iOS IGNORA el `orientation` del manifest: instalado en la
+       pantalla de inicio puede arrancar en vertical y no hay API que lo gire. Lo único
+       honesto es pedirlo. Va en el HTML y no en JS para que aparezca sin esperar a que
+       Phaser cargue. -->
+  <div id="gira"><div class="gira-card"><span class="ico">⟳</span><b>Gira el móvil</b><span class="s">Edades se juega en horizontal</span></div></div>
+</body>
+</html>

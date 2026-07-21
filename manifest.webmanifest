@@ -1,0 +1,17 @@
+{
+  "name": "Edades",
+  "short_name": "Edades",
+  "description": "Estrategia por épocas. De la Prehistoria a la era Moderna, en la palma de la mano.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#1b1f22",
+  "theme_color": "#14181b",
+  "lang": "es",
+  "icons": [
+    { "src": "./icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "./icono-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
