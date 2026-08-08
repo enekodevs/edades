@@ -9,7 +9,7 @@ fuente vive en `enekodevs/edades-fuente` y este repo se pisa con cada publicaci�
 (~350.000 tokens — una sola lectura completa revienta la ventana de contexto y no
 enseña nada: los identificadores están mangleados). Tampoco `audio/` ni `splash/`
 (binarios). Si necesitas entender el código, ve a `edades-fuente/src/` y usa su skill
-`ahorro-tokens`.
+`lectura-frugal`.
 
 Lo único legible aquí: `index.html` (con comentarios útiles sobre PWA/iOS) y
 `manifest.webmanifest`.
