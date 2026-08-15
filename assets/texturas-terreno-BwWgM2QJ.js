@@ -1,0 +1,1 @@
+import{n as e,r as t,t as n}from"./texturas-terreno-XzNTh9HD.js";export{n as capasTerrenoPbr,e as estadoTexturasTerreno,t as precargaTexturasTerreno};
