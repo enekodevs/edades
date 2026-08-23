@@ -1,1 +1,0 @@
-import{i as e,n as t,r as n,t as r}from"./renderer-CaBPIauA.js";export{r as creaRenderer3d,t as liberaRenderer3dPreparado,n as preparaRenderer3d,e as tomaRenderer3dPreparado};

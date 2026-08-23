@@ -1,0 +1,1 @@
+import{a as e,c as t,i as n,l as r,n as i,o as a,r as o,s,t as c,u as l}from"./modelos-CKVbm3Zz.js";export{c as MODELOS,i as aplicaColoresDeBando,o as clipsDe,n as clonaModelo,e as clonaParaFantasma,a as estadoModelos,s as hayModelo,t as liberaModelos,r as modelosListos,l as precargaModelos};
