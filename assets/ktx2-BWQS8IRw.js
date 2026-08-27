@@ -1,0 +1,1 @@
+import{n as e,r as t,t as n}from"./ktx2-Bq6kzR4H.js";export{n as prestamosKtx2,e as sueltaKtx2,t as tomaKtx2};
