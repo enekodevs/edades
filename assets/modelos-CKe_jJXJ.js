@@ -1,0 +1,1 @@
+import{a as e,c as t,d as n,i as r,l as i,n as a,o,r as s,s as c,t as l,u}from"./modelos-DDmC06o1.js";export{l as MODELOS,a as aplicaColoresDeBando,s as clipsDe,r as clonaModelo,e as clonaParaFantasma,o as estadoModelos,c as hayModelo,t as liberaModelos,i as modelosListos,u as precargaModelos,n as primitivasDe};
