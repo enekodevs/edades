@@ -1,0 +1,1 @@
+import{a as e,c as t,d as n,f as r,i,l as a,n as o,o as s,r as c,s as l,t as u,u as d}from"./modelos-Cuiyxe29.js";export{u as MODELOS,o as aplicaColoresDeBando,c as clipsDe,i as clonaModelo,e as clonaParaFantasma,s as estadoModelos,l as hayModelo,t as liberaModelos,a as modelosListos,d as partesInstanciables,n as precargaModelos,r as primitivasDe};
